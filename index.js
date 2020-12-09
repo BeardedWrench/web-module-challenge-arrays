@@ -9,7 +9,7 @@ const originalFlavors = [
     "Cherry Macaron",
     "Chocolate",
     "Chocolate Almond",
-    "Chocolate Chip",
+    "Chocolate npm Chip",
     "Chocolate Fudge",
     "Chocolate Mint",
     "Chocolate Ribbon",
