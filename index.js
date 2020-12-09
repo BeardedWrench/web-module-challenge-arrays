@@ -122,7 +122,7 @@ Use the getFlavorByIndex function below to do the following:
 */
 
 function getFlavorByIndex( arr, index ){
-    return arr[index];
+    return arr[ index ];
 }
 
 
@@ -141,8 +141,10 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName( arr, flavor ){
+    let index = arr.indexOf( flavor );
+    arr.splice( index, 1 );
+    return arr;
 }
 
 
@@ -167,8 +169,14 @@ Use the filterByWord function below to do the following:
     DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-function filterByWord(/*your code here*/){
-    /*your code here*/
+function filterByWord( arr, str ){
+    let filteredArray = [];
+    for( let i = 0; i < arr.length; i++ ){
+      if( arr[ i ].includes( str ) ){
+        filteredArray.push( arr[ i ] );
+      }
+    }
+    return filteredArray;
 }
 
 
@@ -184,7 +192,7 @@ Use the getAverageWordLength function below to do the following:
     For example: getAverageWordLength(originalFlavors) should return a number between 0 and 3.     
 */
 
-function getAverageWordLength(/*code here*/){
+function getAverageWordLength( arr ){
     /*code here*/
 }
 
